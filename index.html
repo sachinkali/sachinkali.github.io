@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin Kumar | Cybersecurity Analyst</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --text-main: #e0e0e0;
+            --text-muted: #888888;
+            --accent-color: #00ffcc; /* Cyber-cyan accent */
+            --card-bg: #111111;
+            --border-color: #333333;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            text-shadow: 0 0 8px var(--accent-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header & Terminal Effect */
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            font-weight: normal;
+        }
+
+        .terminal-box {
+            background-color: #000;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .prompt { color: #00ff00; }
+        .command { color: var(--text-main); }
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 15px;
+            background-color: var(--accent-color);
+            animation: blink 1s step-end infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 50px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            border-left: 3px solid var(--accent-color);
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Grid Layouts */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media(min-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .card h4 {
+            margin: 0 0 10px 0;
+            color: #ffffff;
+        }
+
+        .card .date {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: rgba(0, 255, 204, 0.1);
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Sachin Kumar</h1>
+        <h2>Cybersecurity Analyst | Splunk T2 Support Engineer</h2>
+        
+        <div class="terminal-box">
+            <span class="prompt">root@sachin:~$</span> <span id="typewriter" class="command"></span><span class="cursor"></span>
+        </div>
+    </header>
+
+    <section id="about">
+        <h3>[01] About Me</h3>
+        <p>Cybersecurity Analyst and Splunk T2 Support Engineer with a proven track record in resolving complex client escalations and conducting root cause analysis for Splunk ES and UBA environments. I have a strong foundation in systems-level programming, digital forensics, and secure network architecture.</p>
+        <p>I am a researcher at heart. Passionate about continuous security research, building isolated lab environments, and developing automated solutions for real-time threat detection.</p>
+    </section>
+
+    <section id="experience">
+        <h3>[02] Experience</h3>
+        <div class="grid-container">
+            <div class="card">
+                <h4>Analyst 1 - Splunk T2 Support</h4>
+                <span class="date">Positka (Client: Splunk Inc) | Nov 2024 – Present</span>
+                <p>Provide Tier 2 technical expertise for Splunk UBA and Enterprise Security (ES). Focus on resolving complex client escalations, advanced troubleshooting, and comprehensive root cause analysis for security incidents.</p>
+            </div>
+            <div class="card">
+                <h4>CSE Operations</h4>
+                <span class="date">KocharTech | Aug 2024 – Nov 2024</span>
+                <p>Facilitated clear technical communication and operational support within a fast-paced, on-site environment utilizing Sprinklr Modern Engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <h3>[03] Independent Research & Projects</h3>
+        <div class="grid-container">
+            <div class="card">
+                <h4>Stealth Isolated Lab Architecture</h4>
+                <p>Engineered a daisy-chained network routing research endpoints through Tor. Implemented DNS-over-TLS (DoT) via Quad9 and Cloudflare to ensure absolute local network privacy and prevent DNS leaks.</p>
+            </div>
+            <div class="card">
+                <h4>Network Security Monitoring & SIEM</h4>
+                <p>Implemented a comprehensive security monitoring solution integrating Suricata, Snort, Elasticsearch, and Kibana on Kali Linux for real-time threat detection and automated log monitoring.</p>
+            </div>
+            <div class="card">
+                <h4>Cross-Platform Virtualization Lab</h4>
+                <p>Configured and deployed a macOS environment within a QEMU/KVM virtual machine on a Linux host to facilitate cross-platform application testing and reverse engineering preparation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h3>[04] Technical Skills</h3>
+        <div class="skills-container">
+            <span class="skill-tag">Splunk Enterprise Security (ES)</span>
+            <span class="skill-tag">Splunk UBA</span>
+            <span class="skill-tag">Tier 2 Support</span>
+            <span class="skill-tag">Threat Modeling</span>
+            <span class="skill-tag">Root Cause Analysis</span>
+            <span class="skill-tag">Network Security (Suricata/Snort)</span>
+            <span class="skill-tag">Digital Forensics</span>
+            <span class="skill-tag">Malware Analysis</span>
+            <span class="skill-tag">Kali Linux</span>
+            <span class="skill-tag">Bash / C / C++ / Assembly</span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/0ero" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/sachinkali" target="_blank">GitHub</a> | 
+            <a href="https://f3s3.blogspot.com/" target="_blank">Security Blog</a>
+        </div>
+        <p style="margin-top: 15px;">📍 Chennai 600032, India</p>
+    </footer>
+</div>
+
+<script>
+    // Terminal Typewriter Effect
+    const textToType = "./display_profile.sh --verbose";
+    const typewriterElement = document.getElementById('typewriter');
+    let i = 0;
+
+    function typeWriter() {
+        if (i < textToType.length) {
+            typewriterElement.innerHTML += textToType.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100); // Typing speed
+        } else {
+            // After typing finishes, simulate executing the command
+            setTimeout(() => {
+                typewriterElement.innerHTML = textToType + "<br><br><span style='color:var(--text-muted)'>Loading modules... [OK]<br>Accessing security clearance... [GRANTED]<br>Displaying profile data...</span>";
+            }, 800);
+        }
+    }
+
+    // Start effect on load
+    window.onload = () => {
+        setTimeout(typeWriter, 500);
+    };
+</script>
+
+</body>
+</html>
